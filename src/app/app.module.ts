@@ -5,9 +5,12 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { StackComponent } from './components/stack/stack.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { SkillsComponent } from './components/about/skills/skills.component';
+import { EducationComponent } from './components/about/education/education.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,12 +18,15 @@ import { ContactComponent } from './components/contact/contact.component';
     HeaderComponent,
     AboutComponent,
     FooterComponent,
-    StackComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    SkillsComponent,
+    EducationComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FontAwesomeModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
