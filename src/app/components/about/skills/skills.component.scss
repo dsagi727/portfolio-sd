@@ -1,0 +1,12 @@
+@import '../../../../styles/base/colors';
+
+.tab-contents{
+  ul li {
+    list-style: none;
+    margin: 10px 0;
+
+    span {
+      color:$blue;
+    }
+  }
+}
