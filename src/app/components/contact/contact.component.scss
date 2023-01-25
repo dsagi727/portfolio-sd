@@ -1,0 +1,103 @@
+@import '../../../styles/base/colors';
+
+#contact {
+  padding: 50px 0;
+
+  .container{
+    padding: 10px 10%;
+
+    .row{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+    .sub-title{
+          font-size: 60px;
+          font-weight: 600;
+          color: $light;
+        }
+
+        .contact-left{
+          flex-basis: 45%;
+
+          p{
+            margin-top: 30px;
+
+            a{
+              text-decoration: none;
+              color: $light;
+            }
+
+            fa-icon {
+            color: $blue;
+            margin-right: 15px;
+            font-size: 25px;
+            }
+
+            }
+          .social-icons{
+            margin-top: 30px;
+
+            a{
+              text-decoration: none;
+              font-size: 30px;
+              margin-right: 15px;
+              color: $blue;
+              display: inline-block;
+              transition: transform 0.5s;
+
+              &:hover{
+                color: $hover;
+                transform: translateY(-5px);
+              }
+            }
+          }
+        }
+
+        .contact-right{
+          flex-basis: 50%;
+
+          form {
+            width: 100%;
+
+            input, textarea{
+              width: 100%;
+              border: 0;
+              outline: none;
+              background: $dark-gray;
+              padding: 15px;
+              margin: 15px 0;
+              color: $light;
+              font-size: 18px;
+              border-radius: 6px;
+            }
+
+            button {
+              padding: 14px;
+              font-size: 18px;
+              margin-top: 20px;
+              cursor: pointer;
+            }
+
+          }
+        }
+    }
+  }
+}
+
+.btn{
+  display: inline-block;
+  margin: 50px auto;
+  padding: 14px 50px;
+  width: fit-content;
+  border: 1px solid $blue;
+  border-radius: 6px;
+  text-decoration: none;
+  background: $blue;
+  color: $light;
+  transition: background 0.5s;
+
+  &:hover{
+    background: $hover;
+  }
+}

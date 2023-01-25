@@ -1,1 +1,53 @@
-<p>contact works!</p>
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p>
+          <fa-icon [icon]="faPaperPlane"></fa-icon>
+          <a href="mailto:info@sagidaniel.hu"> info@sagidaniel.hu </a>
+        </p>
+        <p>
+          <a href="tel:+36703154958">
+            <fa-icon [icon]="faPhoneSquare"></fa-icon> +36/70 315 49-58</a
+          >
+        </p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/sagi-daniel/" target="_blank"
+            ><fa-icon [icon]="faLinkedin"></fa-icon
+          ></a>
+          <a href="https://github.com/dsagi727" target="_blank"
+            ><fa-icon [icon]="faGithub"></fa-icon
+          ></a>
+        </div>
+        <a href="" class="btn">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form [formGroup]="contactForm" (ngSubmit)="sendLetter()">
+          <input
+            type="text"
+            placeholder="Your Name"
+            name="name"
+            id="name"
+            formControlName="name"
+          />
+          <input
+            type="email"
+            placeholder="Your email"
+            name="email"
+            id="email"
+            formControlName="email"
+          />
+          <textarea
+            placeholder="Your Message"
+            rows="6"
+            name="msg"
+            id="msg"
+            formControlName="msg"
+          ></textarea>
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
