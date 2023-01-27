@@ -22,39 +22,32 @@
         </div>
         <a href="" class="btn">Download CV</a>
       </div>
-      <!-- <div class="contact-right">
-        <form [formGroup]="contactForm" (ngSubmit)="sendLetter()">
+      <div class="contact-right">
+        <form action="https://formsubmit.co/dsagi727@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false" />
           <input
-            type="text"
-            placeholder="Your Name"
-            name="name"
-            id="name"
-            formControlName="name"
+            type="hidden"
+            name="_subject"
+            value="Portfolio oldalról új megkeresés érkezett!"
           />
+
           <input
             type="email"
             placeholder="Your email"
             name="email"
             id="email"
-            formControlName="email"
+            required
           />
           <textarea
             placeholder="Your Message"
             rows="6"
             name="msg"
             id="msg"
-            formControlName="msg"
+            required
           ></textarea>
-          <button [disabled]="!contactForm.valid" type="submit" class="btn">
-            Send
-          </button>
-          <small
-            *ngIf="contactForm.invalid && contactForm.dirty"
-            class="warning"
-            >Not valid data!</small
-          >
+          <button type="submit" class="btn">Send</button>
         </form>
-      </div> -->
+      </div>
     </div>
   </div>
 </section>
