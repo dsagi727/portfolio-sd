@@ -22,7 +22,7 @@
         </div>
         <a href="" class="btn">Download CV</a>
       </div>
-      <div class="contact-right">
+      <!-- <div class="contact-right">
         <form [formGroup]="contactForm" (ngSubmit)="sendLetter()">
           <input
             type="text"
@@ -45,9 +45,24 @@
             id="msg"
             formControlName="msg"
           ></textarea>
-          <button type="submit" class="btn">Send</button>
+          <button [disabled]="!contactForm.valid" type="submit" class="btn">
+            Send
+          </button>
+          <small
+            *ngIf="contactForm.invalid && contactForm.dirty"
+            class="warning"
+            >Not valid data!</small
+          >
         </form>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
+<footer class="footer">
+  <div class="container">
+    <p class="copyright">
+      Copyright <fa-icon [icon]="faCopyright"></fa-icon>
+      {{ actYear | date : "YYYY" }} Daniel Sagi.
+    </p>
+  </div>
+</footer>

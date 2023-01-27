@@ -4,6 +4,10 @@
   padding: 50px 0;
   background: $dark;
 
+  @media only screen and (max-width: 600px){
+    padding: 0;
+  }
+
   .container{
     padding: 10px 10%;
 
@@ -11,6 +15,10 @@
       font-size: 60px;
       font-weight: 600;
       color: $light;
+
+      @media only screen and (max-width: 600px){
+        font-size: 40px;
+      }
     }
 
     .project-list {

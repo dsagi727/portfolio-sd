@@ -3,7 +3,8 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { faLinkedin, faGithub  } from '@fortawesome/free-brands-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
 
-import { faPhoneSquare } from '@fortawesome/free-solid-svg-icons';
+import { faPhoneSquare, faCopyright } from '@fortawesome/free-solid-svg-icons';
+
 
 
 
@@ -19,6 +20,9 @@ export class ContactComponent implements OnInit {
   faGithub = faGithub;
   faPaperPlane = faPaperPlane;
   faPhoneSquare = faPhoneSquare;
+
+  faCopyright = faCopyright;
+  actYear = new Date();
 
   contactForm!: FormGroup;
 
@@ -36,7 +40,6 @@ export class ContactComponent implements OnInit {
     const newLetter = this.contactForm.value;
     if(newLetter){
 
+}
     }
   }
-
-}
