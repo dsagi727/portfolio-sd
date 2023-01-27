@@ -12,3 +12,23 @@ body {
   color: $light;
   min-width: 300px;
 }
+
+.btn{
+  display: inline-block;
+  margin: 50px auto;
+  padding: 15px 30px;
+  width: fit-content;
+  border: 1px solid $blue;
+  border-radius: 6px;
+  text-decoration: none;
+  background: $blue;
+  color: $light;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background 0.3s;
+  cursor: pointer;
+
+  &:hover{
+    background: $hover;
+  }
+}
