@@ -15,6 +15,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -25,13 +26,14 @@ import { environment } from '../environments/environment';
     ProjectsComponent,
     ContactComponent,
     SkillsComponent,
-    EducationComponent
+    EducationComponent,
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
     ReactiveFormsModule,
     HttpClientModule,
+    RouterModule,
     provideFirebaseApp(() => initializeApp(environment.firebase))
   ],
   providers: [

@@ -79,6 +79,7 @@ background-position: center;
           text-decoration: none;
           font-size: 20px;
           position: relative;
+          cursor: pointer;
 
           &::after{
             content: '';
@@ -126,10 +127,21 @@ background-position: center;
         font-size: 30px;
       }
 
+      .display-br{
+        display: none;
+      }
+
+      @media only screen and (max-width: 1000px){
+        .display-br{
+          display: inline;
+        }
+      }
+
       span{
         color: $blue;
       }
     }
+
   }
  }
 }

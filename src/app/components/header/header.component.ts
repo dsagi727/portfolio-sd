@@ -1,5 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
+
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -26,6 +27,10 @@ export class HeaderComponent implements OnInit {
 
   public closeMenu(): void{
     this.openclose = false;
+  }
+
+  public toNavigate(anchor: string): void {
+    document.getElementById(anchor)?.scrollIntoView({behavior:'smooth'})
   }
 
 }
