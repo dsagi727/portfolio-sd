@@ -15,6 +15,11 @@
       .about-col-1{
         flex-basis: 35%;
 
+        @media only screen and (max-width: 600px){
+          flex-basis: 100%;
+          margin-bottom: 30px;
+        }
+
         img{
           width: 100%;
           border-radius: 15px;
@@ -24,10 +29,19 @@
       .about-col-2{
         flex-basis: 60%;
 
+        @media only screen and (max-width: 600px){
+          flex-basis: 100%;
+          font-size: 14px;
+        }
+
         .sub-title{
           font-size: 60px;
           font-weight: 600;
           color: $light;
+
+          @media only screen and (max-width: 600px){
+            font-size: 40px;
+          }
         }
 
         .tab-titles {
@@ -41,6 +55,11 @@
             font-weight: 500;
             cursor: pointer;
             position: relative;
+
+            @media only screen and (max-width: 600px){
+              font-size: 15px;
+              margin-right: 20px;
+            }
 
             &::after{
               content: '';
