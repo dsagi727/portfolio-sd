@@ -20,7 +20,12 @@
             ><fa-icon [icon]="faGithub"></fa-icon
           ></a>
         </div>
-        <a href="" class="btn">Download CV</a>
+        <a
+          href="../../../assets/files/Daniels_Sagi_CV.pdf"
+          target="_blank"
+          class="btn"
+          >Download CV</a
+        >
       </div>
       <div class="contact-right">
         <form action="https://formsubmit.co/dsagi727@gmail.com" method="POST">
@@ -52,10 +57,8 @@
   </div>
 </section>
 <footer class="footer">
-  <div class="container">
-    <p class="copyright">
-      Copyright <fa-icon [icon]="faCopyright"></fa-icon>
-      {{ actYear | date : "YYYY" }} Daniel Sagi.
-    </p>
-  </div>
+  <p class="copyright">
+    Copyright <fa-icon [icon]="faCopyright"></fa-icon>
+    {{ actYear | date : "YYYY" }} Daniel Sagi.
+  </p>
 </footer>

@@ -9,17 +9,17 @@
         <fa-icon (click)="closeMenu()" [icon]="faTimes"></fa-icon>
       </ul>
       <ul *ngIf="openclose">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a (click)="toNavigate('about')">About</a></li>
+        <li><a (click)="toNavigate('projects')">Projects</a></li>
+        <li><a (click)="toNavigate('contact')">Contact</a></li>
         <fa-icon (click)="closeMenu()" [icon]="faTimes"></fa-icon>
       </ul>
       <fa-icon (click)="openMenu()" [icon]="faBars"></fa-icon>
     </nav>
     <div class="header-text">
-      <p>Frontend Developer</p>
+      <p>Front-end Developer</p>
       <h1>Hello, I'm <br class="display-br" /><span>Daniel</span>.</h1>
-      <a href="#projects" class="btn">Click for my portfolio</a>
+      <a (click)="toNavigate('projects')" class="btn">Click for my portfolio</a>
     </div>
   </div>
 </header>
