@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "sagi-daniel-portfolio": {
+      "hosting": {
+        "portfolio-sd": [
+          "sagi-daniel-portfolio"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "sagi-daniel-portfolio"
+  }
+}
