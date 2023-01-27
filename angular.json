@@ -107,8 +107,8 @@
             "prerender": false,
             "ssr": false,
             "browserTarget": "portfolio-sd:build:production",
-            "firebaseProject": "sagi-daniel-portfolio",
-            "firebaseHostingSite": "sagi-daniel-portfolio"
+            "firebaseProject": "sagi-daniel",
+            "firebaseHostingSite": "sagi-daniel"
           }
         }
       }

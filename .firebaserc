@@ -1,9 +1,9 @@
 {
   "targets": {
-    "sagi-daniel-portfolio": {
+    "sagi-daniel": {
       "hosting": {
         "portfolio-sd": [
-          "sagi-daniel-portfolio"
+          "sagi-daniel"
         ]
       }
     }
