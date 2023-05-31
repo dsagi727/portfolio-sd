@@ -1,22 +1,22 @@
-@import '../../../styles/base/colors';
+@import "../../../styles/base/colors";
 
 #projects {
   padding: 50px 0;
   background: $dark;
 
-  @media only screen and (max-width: 600px){
+  @media only screen and (max-width: 600px) {
     padding: 0;
   }
 
-  .container{
+  .container {
     padding: 10px 10%;
 
-    .sub-title{
+    .sub-title {
       font-size: 60px;
       font-weight: 600;
       color: $light;
 
-      @media only screen and (max-width: 600px){
+      @media only screen and (max-width: 600px) {
         font-size: 40px;
       }
     }
@@ -27,7 +27,7 @@
       grid-gap: 40px;
       margin-top: 50px;
 
-      .project-item{
+      .project-item {
         display: flex;
         height: 100%;
         flex-direction: column;
@@ -45,10 +45,10 @@
           cursor: pointer;
         }
 
-        img{
-          width: 200px;
-          height: 200px;
-          object-fit: fill;
+        img {
+          width: 300px;
+          height: 300px;
+          object-fit: cover;
           border-radius: 15px;
           margin-bottom: 30px;
         }
@@ -75,27 +75,26 @@
           color: $gray;
         }
 
-        .social-icons{
+        .social-icons {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           grid-column-gap: 20px;
           grid-row-gap: 0px;
           margin-top: 30px;
 
-          a{
+          a {
             text-decoration: none;
             font-size: 30px;
             color: $blue;
             display: inline-block;
             transition: transform 0.5s;
 
-            &:hover{
+            &:hover {
               color: $hover;
               transform: translateY(-5px);
             }
           }
         }
-
       }
     }
   }
